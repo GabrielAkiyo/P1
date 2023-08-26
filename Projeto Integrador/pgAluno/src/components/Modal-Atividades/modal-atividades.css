@@ -1,0 +1,42 @@
+.pedentes-area {
+    display: flex;
+    height: 15px;
+    width: 180px;
+    resize: none;
+}
+
+.realizadas-area {
+    display: flex;
+    height: 15px;
+    width: 180px;
+    resize: none;
+}
+
+.anotações-area {
+    display: flex;
+    height: 100px;
+    width: 400px;
+    resize: none;
+}
+
+.parte-alta-atividade{
+    display: flex;
+    flex-direction: column; 
+    padding-left: 36rem;
+    
+}
+
+label{
+   padding-left: 2%;
+   padding-right: 2%;
+}
+
+.atividade-button{
+    font-size: 18px;
+    border-radius: 5px;
+    height: 48px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /*  border-style: none; */
+}

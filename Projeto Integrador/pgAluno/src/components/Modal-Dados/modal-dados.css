@@ -1,0 +1,63 @@
+.nome-area {
+    display: flex;
+    height: 15px;
+    width: 300px;
+    resize: none;
+}
+
+.email-area {
+    display: flex;
+    height: 15px;
+    width: 300px;
+    resize: none;
+}
+
+.cpf-area {
+    display: flex;
+    height: 15px;
+    width: 300px;
+    resize: none;
+}
+
+.endereco-area {
+    display: flex;
+    height: 15px;
+    width: 300px;
+    resize: none;
+}
+
+.telefone-area {
+    display: flex;
+    height: 15px;
+    width: 300px;
+    resize: none;
+}
+
+.parte-alta{
+    display: flex;
+    flex-direction: column; 
+    padding-left: 36rem;
+    
+}
+
+.parte-baixa{
+    display: flex;
+    flex-direction: column;
+    padding-left: 36rem;
+    margin-top: 20px;
+}
+
+label{
+   padding-left: 2%;
+   padding-right: 2%;
+}
+
+.dados-button{
+    font-size: 18px;
+    border-radius: 5px;
+    height: 48px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /*  border-style: none; */
+}

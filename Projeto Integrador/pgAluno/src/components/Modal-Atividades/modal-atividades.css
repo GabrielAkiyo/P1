@@ -1,42 +1,51 @@
-.pedentes-area {
-    display: flex;
-    height: 15px;
-    width: 180px;
-    resize: none;
-}
+/* modal-atividades.css */
 
-.realizadas-area {
-    display: flex;
-    height: 15px;
-    width: 180px;
-    resize: none;
-}
-
-.anotações-area {
-    display: flex;
-    height: 100px;
-    width: 400px;
-    resize: none;
-}
-
-.parte-alta-atividade{
-    display: flex;
-    flex-direction: column; 
-    padding-left: 36rem;
-    
-}
-
-label{
-   padding-left: 2%;
-   padding-right: 2%;
-}
-
-.atividade-button{
-    font-size: 18px;
-    border-radius: 5px;
-    height: 48px;
-    width: 200px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    /*  border-style: none; */
-}
+/* Estilos para o componente ModalAtividades */
+.atividades-browser {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px; /* Adicione um espaço interno maior para aumentar o tamanho da área da div */
+  }
+  
+  .atividades-browser select {
+    width: 100%;
+    padding: 30px; /* Aumente o preenchimento para tornar os selects maiores */
+    font-size: 16px; /* Aumente o tamanho da fonte */
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .atividades-browser p {
+    font-weight: bold;
+    font-size: 18px; /* Aumente o tamanho da fonte dos parágrafos */
+    margin-bottom: 10px; /* Aumente a margem inferior dos parágrafos */
+  }
+  
+  /* Estilizar as opções dos selects separadamente */
+  .atividades-browser select option {
+    padding: 10px; /* Aumente o preenchimento das opções dos selects */
+    background-color: #fff;
+  }
+  
+  /* Estilizar o texto das opções dos selects separadamente */
+  .atividades-browser select[value=""] {
+    color: #777;
+  }
+  
+  .atividades-browser select[value="opcao1"] {
+    color: #007bff;
+  }
+  
+  .atividades-browser select[value="opcao2"] {
+    color: #333;
+  }
+  
+  .atividades-browser select[value="opcao3"] {
+    color: #555;
+  }
+  
+  .atividades-browser select[value="opcao4"] {
+    color: #888;
+  }
+  

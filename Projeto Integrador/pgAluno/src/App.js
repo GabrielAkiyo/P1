@@ -1,27 +1,30 @@
 import './App.css';
-import ModalDados from './components/Modal-Dados/modal-dados';
-import ModalAtivdade from './components/Modal-Atividades/modal-atividades';
+import Header from './components/Header/Header';
+import DadosInfos from './components/Dados-Infos/Dados-Infos';
 
 function App() {
   return (
 
-    <div className='background-nav'>
-      <nav className='nav-aluno'> Area do Aluno </nav>
+    <div>
+      <nav className='nav-aluno'> <Header /> </nav>
 
       <div className="App">
 
-        <div className='background-app'>
 
-          <ModalDados />
-          <br />
-          <ModalAtivdade />
-          <br />
 
-        </div>
+        <DadosInfos />
+        
+  
+
+
 
       </div>
 
+
     </div>
+
+
+
 
 
   );

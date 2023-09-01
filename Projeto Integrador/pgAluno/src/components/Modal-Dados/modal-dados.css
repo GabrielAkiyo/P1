@@ -1,63 +1,117 @@
-.nome-area {
-    display: flex;
-    height: 15px;
-    width: 300px;
+/* Estilos para o formulário de informações do usuário */
+.dados-form {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .dados-form .parte-alta {
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    padding: 20px;
+  }
+  
+  .dados-form label {
+    font-weight: bold;
+  }
+  
+  .dados-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
     resize: none;
-}
+    background-color: #fff;
+  }
+  
+  .dados-form .nome-area {
+    font-weight: bold;
+  }
+  
+  .dados-form .email-area {
+    font-style: italic;
+    color: #007bff;
+  }
+  
+  .dados-form .cpf-area {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dados-form .endereco-area {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .dados-form .telefone-area {
+    font-weight: bold;
+    color: #333;
+  }
+  
 
-.email-area {
-    display: flex;
-    height: 15px;
-    width: 300px;
-    resize: none;
-}
-
-.cpf-area {
-    display: flex;
-    height: 15px;
-    width: 300px;
-    resize: none;
-}
-
-.endereco-area {
-    display: flex;
-    height: 15px;
-    width: 300px;
-    resize: none;
-}
-
-.telefone-area {
-    display: flex;
-    height: 15px;
-    width: 300px;
-    resize: none;
-}
-
-.parte-alta{
-    display: flex;
-    flex-direction: column; 
-    padding-left: 36rem;
-    
-}
-
-.parte-baixa{
-    display: flex;
-    flex-direction: column;
-    padding-left: 36rem;
-    margin-top: 20px;
-}
-
-label{
-   padding-left: 2%;
-   padding-right: 2%;
-}
-
-.dados-button{
+.dados-button {
+    margin-left: 15%;
+    margin-top: 10%;
     font-size: 18px;
     border-radius: 5px;
     height: 48px;
     width: 200px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    /*  border-style: none; */
+    
 }
+
+.atividades-button {
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 48px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  
+}
+
+.horarios-button {
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 48px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+   
+}
+
+
+.parte-alta {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  width: 98%;
+ 
+
+  border-radius: 5px;
+
+  font-size: 20px;
+}
+
+textarea{
+  resize: none;
+
+  font-size: 17px;
+  width: 30%;
+  
+}
+
+label {
+  
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+

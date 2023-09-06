@@ -1,37 +1,58 @@
-import React, { useState } from 'react'
-import './modal-atividades.css'
+import React, { useState } from 'react';
+import './modal-atividades.css';
 
 const ModalAtividades = () => {
+  const [selectedUC, setSelectedUC] = useState('');
+  const [selectedActivity, setSelectedActivity] = useState('');
 
-    const [selectedOption, setSelectedOption] = useState('');
 
-    const handleSelectChange = (event) => {
-        setSelectedOption(event.target.value);
-    };
+  const activityOptions = {
+    opcao1: ['Atividade 1', 'Atividade 2'],
+    opcao2: ['Atividade 3', 'Atividade 4'],
+    opcao3: ['Atividade 5', 'Atividade 6'],
+    opcao4: ['Atividade 7', 'Atividade 8'],
+  };
 
-    return (
+  const handleUCSelectChange = (event) => {
+    const selectedUCValue = event.target.value;
+    setSelectedUC(selectedUCValue);
 
-        <div className='atividades-browser'>     
-            <p>Unidade Curricular: </p>
-            <select value={selectedOption} onChange={handleSelectChange}>
-                <option value="">Unidades Curriculares</option>
-                <option value="opcao1">UC1</option>
-                <option value="opcao2">UC2</option>
-                <option value="opcao3">UC3</option>
-                <option value="opcao4">UC4</option>
-            </select>
-            {/* <p>Opção selecionada: {selectedOption}</p> */}
-            <p>Atividades Realizadas: </p>
-            <select value={selectedOption} onChange={handleSelectChange}>
-                <option value="">Atividades Realizadas</option>
-                <option value="opcao1">Atividade 1</option>
-                <option value="opcao2">Atividade 2</option>
-                <option value="opcao3">Atividade 3</option>
-                <option value="opcao4">Atividade 4</option>
-            </select>
-        </div>
+  
+    setSelectedActivity('');
+  };
 
-    )
+  const handleActivitySelectChange = (event) => {
+    const selectedActivityValue = event.target.value;
+    setSelectedActivity(selectedActivityValue);
+  };
 
-}
+  return (
+    <div className='atividades-browser'>
+      <p>Unidade Curricular:</p>
+      <select value={selectedUC} onChange={handleUCSelectChange}>
+        <option value="">Unidades Curriculares</option>
+        <option value="opcao1">UC1</option>
+        <option value="opcao2">UC2</option>
+        <option value="opcao3">UC3</option>
+        <option value="opcao4">UC4</option>
+      </select>
+
+      <p>Atividades Realizadas:</p>
+      <select
+        value={selectedActivity}
+        onChange={handleActivitySelectChange}
+        disabled={!selectedUC} 
+      >
+        <option value="">Atividades Realizadas</option>
+        {selectedUC &&
+          activityOptions[selectedUC].map((activity, index) => (
+            <option key={index} value={activity}>
+              {activity}
+            </option>
+          ))}
+      </select>
+    </div>
+  );
+};
+
 export default ModalAtividades;

@@ -1,16 +1,17 @@
-/* modal-atividades.css */
 
-/* Estilos para o componente ModalAtividades */
 .atividades-browser {
+  border: 2px solid #ddd;
+  background: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 20px;
-    padding: 20px; /* Adicione um espaço interno maior para aumentar o tamanho da área da div */
+    padding: 20px; 
+    
   }
   
   .atividades-browser select {
     width: 100%;
-    padding: 30px; /* Aumente o preenchimento para tornar os selects maiores */
-    font-size: 16px; /* Aumente o tamanho da fonte */
+    padding: 30px; 
+    font-size: 16px; 
     border: 2px solid #ddd;
     margin-bottom: 20px;
     background-color: #f5f5f5;
@@ -18,17 +19,16 @@
   
   .atividades-browser p {
     font-weight: bold;
-    font-size: 18px; /* Aumente o tamanho da fonte dos parágrafos */
-    margin-bottom: 10px; /* Aumente a margem inferior dos parágrafos */
+    font-size: 18px; 
+    margin-bottom: 10px; 
   }
-  
-  /* Estilizar as opções dos selects separadamente */
+
   .atividades-browser select option {
-    padding: 10px; /* Aumente o preenchimento das opções dos selects */
+    padding: 10px; 
     background-color: #fff;
   }
   
-  /* Estilizar o texto das opções dos selects separadamente */
+
   .atividades-browser select[value=""] {
     color: #777;
   }

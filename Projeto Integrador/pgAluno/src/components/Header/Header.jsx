@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
+import Logo from '../../icons/logo.png'
+import Clock from './Relogio'
 
 export default function Header() {
 
@@ -15,11 +16,13 @@ export default function Header() {
         <div className="containerHeader">
 
 
-            <div className="background-data">
-                <div className="data">
-                    <p>{currentDate}</p>
-                </div>
+            <div className="data">
+                <img id='logo' src={Logo}></img>
+                <h1>Área do aluno</h1>
+                <p>{currentDate}</p>
+                <Clock />
             </div>
+
 
         </div>
     )

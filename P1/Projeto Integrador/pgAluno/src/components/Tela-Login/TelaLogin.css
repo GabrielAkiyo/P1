@@ -1,0 +1,41 @@
+.container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px ;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 9%, rgba(0, 212, 255, 1) 100%);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 275px;
+
+    -webkit-box-shadow: 10px 10px 55px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 55px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 55px -15px rgba(0, 0, 0, 0.75);
+}
+
+
+
+.btt-login {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 8px;
+    border-style: none;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btt-login:hover {
+    background-color: #F9C100;
+}
